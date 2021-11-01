@@ -25,4 +25,15 @@ public class cuadrado extends AppCompatActivity {
         textView2.setText(String.valueOf("El perimetro del cuadrado es " + total + " cm" ));
 
     }
+
+    public void cuadradoP (View v) {
+        EditText editText = (EditText) findViewById(R.id.editText);
+        TextView textView2 = (TextView) findViewById(R.id.textView2);
+
+
+        int lado1 = Integer.parseInt(editText.getText().toString());
+        int total = lado1 * lado1;
+        textView2.setText(String.valueOf("El area del cuadrado es " + total + " cm2" ));
+
+    }
 }
